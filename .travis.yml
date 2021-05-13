@@ -8,5 +8,4 @@ branches:
 
 
 notifications:
-  slack:
-    ${{secrets.SLACK_NOTFICATION_KEY}}
+  slack: lll-dsi3462:FOPL3G1r4Ilqcg9v9Qp1rbs8
