@@ -1,11 +1,11 @@
 before_install:
-- chmod +x ./mvnw
+  - chmod +x ./mvnw
 language: java
 
 branches:
   only:
-  - master
+    - master
 
 
 notifications:
-  slack: ${{ secrets.SLACK_NOTFICATION_KEY }}
+  slack: $ SLACK_CHANNEL_KEY
