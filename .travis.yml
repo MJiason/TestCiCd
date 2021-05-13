@@ -7,6 +7,3 @@ deploy:
     secure: @HEROCU_API_KEY
 script:
   - ./mvnw clean install -B
-branches:
-  only:
-    - master
