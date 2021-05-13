@@ -1,11 +1,8 @@
 language: java
 jdk:
-  - oraclejdk11
+  - oraclejdk8
 deploy:
   provider: heroku
-  api_key:
-    secure: @HEROCU_API_KEY
-script:
-  - ./mvnw clean install -B
-
-
+  api-key:
+    secure: $HEROKU_API_KEY
+  app: test-herocu-cicd
