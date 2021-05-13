@@ -1,3 +1,14 @@
 before_install:
   - chmod +x ./mvnw
 language: java
+
+
+notifications:
+  slack: lll-dsi3462:5c5m3DJ32B77abWIlrFpSkVZ
+
+
+
+
+branches:
+  only:
+    - master
