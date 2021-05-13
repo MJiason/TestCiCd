@@ -1,14 +1,9 @@
 before_install:
-  - chmod +x ./mvnw
+- chmod +x ./mvnw
 language: java
-
-
 notifications:
-  slack: lll-dsi3462:5c5m3DJ32B77abWIlrFpSkVZ
-
-
-
-
+  slack:
+    secure: cge+yASZamjCdUSn2E6cepJgfBBncrQFIlU3OX5Id4sxKmeYdisyjVZmqHpa1BplkJb/YehnXw9/Tv9BQEyAUyTnbHrmRCDMZOQXiVlC0EQaKn8iCs4MmxwHfat+qcCPrP+TBrGo2tqdStYxxnjrSMMd7e1Ys1GjwboPHT2jVFzCHm/YVmFdmtwFi74z+Jkp/XI2JuUAWB5zr5FgpULwcu1nHNQ9Al61E2dAraILOl5YZUPn7tHGti08a2Sxv6sVLbiSFWQf7iLL7bBAIo1HTXuWls7BrpLeYijqZSeQwSolXEZHo+jCZGh5CwvxGgciw+KeJWsRz0kePDKZdhcmd/1wM7cAhwP5QVBoDFWsrcu7lfb7dKjK4vftBSkb+t3RNFA07/7U5gCKycVJQxqlDaK0VCEEMPrSsjRQsmVA+dO0CS8kSEML5oqXBkrBrbCw4Qtbh60OuEIE5xwl1pGzBlB07ozBunsNDUwXKdzWJD0z/1MGqc0AuW1fC6UcSug/OtxCXY3zAsTZBuaoveM8YWGT1cPkstqQiDwYP2zjSQuAODIyij4c83Y3HUCCHzzrQgSVUluNhwKqez8GU7VDazJutOblAiFZM+t7CnkpkfyD3SdybzmJ+MS2wtwbUAQhHnRxTGKPpkhm/xduIBP/cg0z9ZwWu4kUJO9BAjXocyQ=
 branches:
   only:
-    - master
+  - master
