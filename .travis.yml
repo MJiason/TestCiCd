@@ -8,4 +8,4 @@ branches:
 
 
 notifications:
-  slack: $SLACK_CHANNEL_KEY
+  slack: lll-dsi3462:pP6YA8n1oxveDKsT2yxp6GTC
