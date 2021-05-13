@@ -1,10 +1,12 @@
 before_install:
 - chmod +x ./mvnw
 language: java
-notifications:
-  slack:
-    rooms:
-      - secure: YaEwNRfHm+rb/cEJQgkuv6s/5kWQw6b9F/hV0YKqoRQM4/tailhuLDd/Pikfi1DBeR5eQj8CMirIDwVHbPOxX0vAegRkFj9Ke1xflnVv7V+xLzRqm3BFFqVe4r0Xh0cfjHrjMQ3/sP7y+KFBUgLJLfSSfH2j1M9Sx9qNWanT6h2TX1IBdXefHZrdkFFH3PtzHtJa5/YJebaBdUbaUnHXUx3vMfG1kZhD5+mfrF4dukRzs+iJDQL2GEkBJc3wpG8FTnYqRFLZ87PwDa5CfJz3Anfg9K/jdv1Z7JdZLuwL2ikJI1NswB09IFMO8zk2L6JF0BG9AZXcaqVYDczJysOz3k0dHVoW3OFjX6rECiZWzAYnkDfMXMLb+jBcpS6N3cU/V6bn3Y7y57yQyQpDo4PMIzCOjqfXP7UBqEntQReHk8rS/Q49qXlb21jdL3EntNks6+Gow7WLAyzLZkJTdw918Vtb856PBZDgAo3femvtzUxd8baRhUiDQq4uV6w2bzxBf2IA82uA5sdtd47y6ZFRDl1gK/egeNUCDTIdhAyQy4FqwB3s1gHvI0ctwS12NrfbafFRlgDkdS3Yv5TsCzGpDUl/0TYqucnyygBB5TsRxqW5325c4RDfyanSs6g7HZTwxfsYxEQPCt2Y9S4XHu2EcdycXjyl6bYoKtOUBZA3uso=
+
 branches:
   only:
   - master
+
+
+notifications:
+  slack:
+    ${{secret.SLACK_NOTFICATION_KEY}}
