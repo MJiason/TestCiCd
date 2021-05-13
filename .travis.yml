@@ -1,4 +1,11 @@
 language: java
 jdk:
   - oraclejdk11
+deploy:
+  provider: heroku
+  api_key:
+    secure: @HEROCU_API_KEY
+script:
+  - ./mvnw clean install -B
+
 
