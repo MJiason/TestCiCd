@@ -9,4 +9,4 @@ branches:
 
 notifications:
   slack:
-    ${{secret.SLACK_NOTFICATION_KEY}}
+    ${{secrets.SLACK_NOTFICATION_KEY}}
