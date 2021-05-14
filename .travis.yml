@@ -24,7 +24,7 @@ notifications:
 
 addons:
   sonarcloud:
-    organization: "mjiason"
+    organization: mjiason
     token:
       secure: bfd4354572f5616aed2e19f7b11d18183f465b8a
 
