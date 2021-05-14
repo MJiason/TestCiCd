@@ -1,34 +1,23 @@
 before_install:
   - chmod +x ./mvnw
-
 language: java
-
 deploy:
   provider: heroku
   api-key: $HEROKU_API_KEY
   app: test-travis-ci-cd
-
 branches:
   only:
     - master
-
-
 notifications:
-  slack: "SLACK'
+  slack: lll-dsi3462:pP6YA8n1oxveDKsT2yxp6GTC
   on_success: always  # change: send a notification when the build status changes.
   on_failure: always  # always: always send a notification.
   template:
     - "Repo `%{repository_slug}` *%{result}* build (<%{build_url}|#%{build_number}>) for commit (<%{compare_url}|%{commit}>) on branch `%{branch}`."
     - "Execution time: *%{duration}*"
     - "Message: %{message}"
-
 addons:
   sonarcloud:
     organization: mjiason
-    token:
-    secure: $SONAR_TOKEN
-
-
+    token: bfd4354572f5616aed2e19f7b11d18183f465b8a
 script:
-  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=MJiason_TestCiCd
