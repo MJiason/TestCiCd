@@ -2,6 +2,11 @@ before_install:
   - chmod +x ./mvnw
 language: java
 
+deploy:
+  provider: heroku
+  api_key:
+    secure: $HEROKU_API_KEY
+  app: test-trevis-ci-cd
 branches:
   only:
     - master
