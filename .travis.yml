@@ -14,7 +14,7 @@ branches:
 
 
 notifications:
-  slack: ${SLACK}
+  slack: "SLACK'
   on_success: always  # change: send a notification when the build status changes.
   on_failure: always  # always: always send a notification.
   template:
@@ -26,7 +26,7 @@ addons:
   sonarcloud:
     organization: mjiason
     token:
-    secure: ${SONAR_TOKEN}
+    secure: $SONAR_TOKEN
 
 
 script:
