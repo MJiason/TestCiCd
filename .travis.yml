@@ -25,7 +25,7 @@ notifications:
 addons:
   sonarcloud:
     organization: mjiason
-    token: bfd4354572f5616aed2e19f7b11d18183f465b8a
+    token: SONAR_TOKEN
 
 
 script:
