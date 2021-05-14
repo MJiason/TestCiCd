@@ -9,7 +9,7 @@ branches:
   only:
     - master
 notifications:
-  slack: lll-dsi3462:pP6YA8n1oxveDKsT2yxp6GTC
+  slack: ${SLACK}
   on_success: always  # change: send a notification when the build status changes.
   on_failure: always  # always: always send a notification.
   template:
