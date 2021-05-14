@@ -5,9 +5,9 @@ language: java
 
 deploy:
  provider: heroku
- api-key: 
-  secure: $HEROKU_API_KEY
-  app: test-trevis-ci-cd
+  api-key:
+    secure: $HEROKU_API_KEY
+  app: test-travis-ci-cd
 
 branches:
   only:
