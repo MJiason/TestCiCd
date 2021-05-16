@@ -1,5 +1,6 @@
 package com.example.test1;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -8,6 +9,11 @@ class Test1ApplicationTests {
 
     @Test
     void contextLoads() {
+    }
+
+    @Test
+    void test() {
+        Assertions.fail();
     }
 
 }
