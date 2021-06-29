@@ -9,4 +9,4 @@ jobs:
     - name: Slack Notification
       uses: partnerhero/action-webhook-slack-notify@v2.1.0
       env:
-        SLACK_WEBHOOK: https://hooks.slack.com/services/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
+        SLACK_WEBHOOK: https://hooks.slack.com/services/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
