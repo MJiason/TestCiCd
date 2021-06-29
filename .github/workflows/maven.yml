@@ -12,7 +12,7 @@ on:
 jobs:
   build:
     env:
-      SLACK_WEBHOOK_URL: ${{ https://hooks.slack.com/services/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 }}
+      SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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 
 
     runs-on: ubuntu-latest
 
@@ -25,4 +25,6 @@ jobs:
         distribution: 'adopt'
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: slack - GitHub Actions Slack integration
+      uses: act10ns/slack@v1.2.2
   
